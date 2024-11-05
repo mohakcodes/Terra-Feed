@@ -24,7 +24,7 @@ const CardsList = () => {
       setCards(JSON.parse(localStorage.getItem('cards')));
     }
     fetchData();
-  },[]);3
+  },[]);
 
   return (
     <div className='flex flex-col justify-center w-full'>

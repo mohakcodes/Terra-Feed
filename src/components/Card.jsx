@@ -24,7 +24,7 @@ const Card = ({ card }) => {
       <div className='bg-emerald-300 p-2 sm:p-3 rounded-b-xl'>
         <p className='text-xs sm:text-sm text-gray-700 mb-1'>
           <strong>Data URL:</strong> 
-          <a href={card.data.url} target='_blank' className='text-blue-600 font-medium block truncate max-w-[90%] sm:max-w-sm hover:underline'>
+          <a href={card.data.url} target='_blank' className='text-blue-800 font-medium block truncate max-w-[90%] sm:max-w-sm hover:underline'>
             {card.data.url}
           </a>
         </p>
