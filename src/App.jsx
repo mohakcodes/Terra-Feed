@@ -3,7 +3,7 @@ import CardsList from './components/CardsList';
 
 const App = () => {
   return (
-    <div className='bg-gradient-to-r from-emerald-700 via-emerald-300 to-emerald-700 p-5 overflow-x-hidden'>
+    <div className='bg-gradient-to-r from-emerald-700 via-emerald-300 to-emerald-700 p-5 overflow-x-hidden max-h-screen'>
       <h1 className='text-2xl sm:text-3xl lg:text-4xl font-bold text-emerald-950 text-center mb-2'>
         TerraFeed: <span className='italic'>Tech Articles & Community QnA</span>
       </h1>

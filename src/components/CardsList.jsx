@@ -4,7 +4,7 @@ import Card from './Card';
 
 const CardsList = () => {
 
-  const [cards, setCards] = useState();
+  const [cards, setCards] = useState([]);
 
   const fetchData = async() => {
     try {
@@ -27,10 +27,19 @@ const CardsList = () => {
   },[]);
 
   return (
-    <div className='flex flex-col justify-center w-full'>
-        {cards && cards.map((card,index)=>(
+    <div className='flex flex-col justify-center w-full min-h-[75vh]'>
+        {
+          cards.length === 0 ? (
+            <div className='flex items-center justify-center space-x-2 animate-spin'>
+              <div className='w-4 h-4 bg-emerald-700 rounded-full'></div>
+              <div className='w-4 h-4 bg-emerald-500 rounded-full'></div>
+            </div>
+          ) 
+          : 
+          (cards && cards.map((card,index)=>(
             <Card key={index} card={card}/>
-        ))}
+          )))
+        }
     </div>
   )
 }
